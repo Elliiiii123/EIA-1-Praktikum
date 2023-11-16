@@ -1,0 +1,35 @@
+html{
+    background-color: gray;
+
+}
+
+div{
+    position: absolute;
+    left: 36%;
+    top: 5%;
+
+}
+
+img {
+    width: 400px;
+    height: 280px;
+}
+
+.middle{
+    position:absolute;
+    left: 36%;
+    top: 35%;
+
+}
+
+.outro{
+    position:absolute;
+    left: 36%;
+    top: 72%;
+}
+
+h1 {
+    color: aliceblue;
+    font: lighter;
+
+}
