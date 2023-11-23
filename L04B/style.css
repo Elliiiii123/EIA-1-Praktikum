@@ -1,0 +1,83 @@
+html {
+    background-color: plum;
+}
+
+@media screen and (max-width: 1279px) {
+    div{
+        position: absolute;
+        left: 15%
+    }
+    
+    .one {
+        background-color: rgb(155, 52, 189);
+        height: 350px;
+        width: 300px;
+        position: absolute 
+       
+    }
+    
+    .two {
+        background-color: rgb(119, 119, 241);
+        height: 150px;
+        width: 300px;
+        top: 350px;
+    }
+    
+    .three {
+        height: 75px;
+        width: 300px;
+        background-color: rgb(245, 179, 222);
+        top: 575px;
+        left: 0px;
+    }
+    
+    .four {
+        background-color: rgb(219, 122, 219);
+        height: 75px;
+        width: 300px;
+        top: 500px;
+        left: 0px;
+    }
+}
+
+@media screen and (min-width:1280px){
+   
+    .parent {
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        padding: 50px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .one { 
+            grid-area: 1 / 1 / 6 / 4;
+            background-color: rgb(155, 52, 189);
+            height: 100%;
+            width: 100%;
+        }
+
+        .two { 
+            grid-area: 1 / 4 / 4 / 6;
+            background-color: rgb(119, 119, 241);
+            height: 100%;
+            width: 100%;
+        }
+        .three { 
+            grid-area: 4 / 4 / 6 / 5;
+            background-color: rgb(245, 179, 222);
+            height: 100%;
+            width: 100%;
+        }
+        .four { 
+            grid-area: 4 / 5 / 6 / 6;
+            background-color: rgb(219, 122, 219);
+            height: 100%;
+            width: 100%;
+        }
+
+}
+
