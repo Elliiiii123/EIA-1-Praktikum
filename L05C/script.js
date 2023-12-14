@@ -1,4 +1,5 @@
 
+
 let stories = ["A new technology allows you to travel to Space. Do you want to travel to Saturn or a newly discovered _Star_? ",
                "The planet is lost and you feel lonely. Do you want to go <span>home</span> or <span>stay</span>?",
                "The Star is beautiful and you meet a lot of friendly aliens, but you miss home. Do you want to go back to <span>earth</span> or stay with the <span>aliens</span>?",
@@ -16,7 +17,7 @@ const input = document.querySelector(".input")
 const output = document.getElementById("output");
 
 
-input.addEventListener("keydown" , function (event){
+input.addEventListener("keydown", function (event){
     if(event.key == "Enter" && state == 0) {
         console.log("Test")
         if (input.value == "Saturn") {
@@ -42,16 +43,10 @@ input.addEventListener("keydown", function (event){
         } else if (input.value == "stay") {
         output.innerHTML = stories[4]
         state++
-        }/*else if(input.value != ("home" || "stay")) {
-        output.innerHTML = stories [7]
+        }
+        /*else if(input.value !=("home"||"stay")) {
+        output.innerHTML = stories[7]
         }*/
-        input.value = ""
-    }
-})
-
-input.addEventListener("keydown", function (event){
-    if(event.key == "Enter" && state == 1) {
-        console.log("Test")
         if (input.value == "earth") {
         output.innerHTML = stories[6]
         state++
@@ -64,6 +59,8 @@ input.addEventListener("keydown", function (event){
         input.value = ""
     }
 })
+
+
 
 input.addEventListener("keydown", function (event){
     if(event.key == "Enter" && state == 2) {
